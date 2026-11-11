@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Zakažite pregled u ginekološkoj ordinaciji Femina Vita i pročitajte utiske pacijentkinja.">
+<title>Zakazivanje pregleda i utisci</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FBFAF8}
+img{max-width:100%}
+[hidden]{display:none!important}
+details>summary{list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details[open] .faq-sign{transform:rotate(45deg)}
+.faq-sign{transition:transform .2s}
+a{color:#6B2D5C}a:hover{color:#4A1E40}
+input,select,textarea,button{font-family:inherit}
+</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #2A2328; background: #FBFAF8; min-height: 100vh; line-height: 1.6">
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #ECE4E8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #2A2328">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17" stroke="#6B2D5C" stroke-width="2"></circle><path d="M18 9c-4 4-6 7-6 10a6 6 0 0 0 12 0c0-3-2-6-6-10z" stroke="#6B2D5C" stroke-width="2" stroke-linejoin="round"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-weight: 700; font-size: 20px">Femina Vita</span><span style="font-size: 13px; color: #6E6269">Ginekološka ordinacija · Novi Beograd</span></span>
+</a>
+<a href="index.html" style="text-decoration: none; background: #FFFFFF; color: #6B2D5C; border: 1.5px solid #6B2D5C; padding: 10px 20px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>Nazad na početnu</a>
+</div>
+</header>
+
+<section id="zakazivanje" style="background: #F4E9EE">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="color: #6B2D5C; font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Zakazivanje</span>
+<h1 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: clamp(32px, 4.5vw, 48px); line-height: 1.15">Zakažite pregled</h1>
+<p style="margin: 0; color: #5A4F55; font-size: 17px">Popunite formular i javićemo vam se u toku radnog dana da potvrdimo termin. Ako vam je lakše, pozovite nas.</p>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<a href="tel:+381622223337" style="font-weight: 600">062 222 3337</a>
+<a href="mailto:feminavitabgd@hotmail.com">feminavitabgd@hotmail.com</a>
+<span style="color: #5A4F55">Pon–Pet 08:00–20:00 · Sub 09:00–14:00</span>
+</div>
+</div>
+<div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #ECE4E8; border-radius: 24px; padding: 32px; box-sizing: border-box">
+<div id="booking-done" hidden style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2F6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg>
+<h2 style="margin: 0; font-size: 22px; font-family: 'Plus Jakarta Sans', Inter, sans-serif">Hvala, zahtev je poslat</h2>
+<p style="margin: 0; color: #5A4F55">Javićemo vam se u toku radnog dana da potvrdimo termin.</p>
+<button type="button" id="booking-new" style="margin-top: 8px; min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 1.5px solid #6B2D5C; background: #FFFFFF; color: #6B2D5C; font-weight: 600; cursor: pointer">Novi zahtev</button>
+</div>
+<form id="booking-form" style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Ime i prezime<input type="text" required style="min-height: 44px; padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Telefon<input type="tel" required style="min-height: 44px; padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Usluga
+<select style="min-height: 44px; padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF">
+<option>Ginekološki pregled</option>
+<option>Ultrazvuk male karlice</option>
+<option>Papanikolau i HPV test</option>
+<option>Kolposkopija</option>
+<option>Praćenje trudnoće</option>
+<option>Kontracepcija i planiranje</option>
+</select>
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Željeni datum<input type="date" style="min-height: 44px; padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Napomena (nije obavezno)<textarea rows="3" style="padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF; resize: vertical"></textarea></label>
+<button type="submit" style="min-height: 48px; padding: 14px 28px; border-radius: 999px; border: none; background: #6B2D5C; color: #FFFFFF; font-size: 16px; font-weight: 600; cursor: pointer">Pošaljite zahtev</button>
+<p style="margin: 0; font-size: 13px; color: #6E6269">Vaši podaci se koriste isključivo za zakazivanje termina.</p>
+</form>
+</div>
+</div>
+</section>
+
+<section id="utisci" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 12px">
+<span style="color: #6B2D5C; font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Utisci</span>
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: clamp(28px, 3.5vw, 40px); line-height: 1.2">Šta kažu naše pacijentkinje</h2>
+<p style="margin: 0; color: #5A4F55; font-size: 17px; max-width: 620px">Vaše iskustvo nam pomaže da budemo bolji. Pročitajte utiske drugih ili podelite svoj.</p>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+<div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px" id="reviews-list">
+</div>
+
+<div style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #ECE4E8; border-radius: 24px; padding: 28px; box-sizing: border-box">
+<div id="review-done" hidden style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
+<h2 style="margin: 0; font-size: 22px; font-family: 'Plus Jakarta Sans', Inter, sans-serif">Hvala na utisku</h2>
+<p style="margin: 0; color: #5A4F55">Vaš utisak je dodat na listu.</p>
+<button type="button" id="review-new" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 1.5px solid #6B2D5C; background: #FFFFFF; color: #6B2D5C; font-weight: 600; cursor: pointer">Napišite još jedan</button>
+</div>
+<form id="review-form" style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 22px; font-family: 'Plus Jakarta Sans', Inter, sans-serif">Ostavite utisak</h2>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Ime (ili inicijali)<input type="text" required id="r-name" style="min-height: 44px; padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Ocena
+<select id="r-rating" style="min-height: 44px; padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF">
+<option value="5">5 – odlično</option>
+<option value="4">4 – vrlo dobro</option>
+<option value="3">3 – dobro</option>
+<option value="2">2 – loše</option>
+<option value="1">1 – veoma loše</option>
+</select>
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Vaš utisak<textarea rows="4" required id="r-text" style="padding: 10px 14px; border: 1px solid #CFC3C9; border-radius: 12px; font-size: 16px; background: #FFFFFF; resize: vertical"></textarea></label>
+<button type="submit" style="min-height: 48px; padding: 14px 28px; border-radius: 999px; border: none; background: #6B2D5C; color: #FFFFFF; font-size: 16px; font-weight: 600; cursor: pointer">Pošaljite utisak</button>
+</form>
+</div>
+</section>
+
+<footer style="background: #2A2328; color: #E9E1E5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px">
+<span>© 2026 Femina Vita · Ginekološka ordinacija, Novi Beograd</span>
+<span>Utisci označeni sa „Primer“ su šablon za zamenu stvarnim utiscima</span>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var reviews = [
+    { name: '[Ime pacijentkinje]', service: 'Praćenje trudnoće', rating: 5, sample: true,
+      text: 'Primer utiska: doktorka je odvojila vreme da objasni svaki ultrazvuk, a osoblje je bilo ljubazno i pažljivo.' },
+    { name: '[Ime pacijentkinje]', service: 'Ginekološki pregled', rating: 5, sample: true,
+      text: 'Primer utiska: termin je ispoštovan bez čekanja, prostor je miran i prijatan, a pregled prošao bez neprijatnosti.' }
+  ];
+  var list = document.getElementById('reviews-list');
+  function el(tag, style, text) {
+    var e = document.createElement(tag);
+    if (style) e.setAttribute('style', style);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function render() {
+    list.innerHTML = '';
+    reviews.forEach(function (r) {
+      var n = Number(r.rating) || 5;
+      var fig = el('figure', 'margin: 0; background: #FFFFFF; border: 1px solid #ECE4E8; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px');
+      var top = el('div', 'display: flex; justify-content: space-between; align-items: center; gap: 12px');
+      var stars = el('span', 'color: #B07A2A; font-size: 18px; letter-spacing: 2px', '★★★★★'.slice(0, n) + '☆☆☆☆☆'.slice(0, 5 - n));
+      stars.setAttribute('role', 'img'); stars.setAttribute('aria-label', 'Ocena ' + n + ' od 5');
+      top.appendChild(stars);
+      if (r.sample) top.appendChild(el('span', 'font-size: 12px; font-weight: 600; color: #6E6269; background: #F3EEF1; padding: 4px 10px; border-radius: 999px', 'Primer'));
+      fig.appendChild(top);
+      fig.appendChild(el('blockquote', 'margin: 0; font-size: 16px; color: #2A2328', '„' + r.text + '“'));
+      var cap = el('figcaption', 'font-size: 14px; color: #6E6269');
+      cap.appendChild(el('span', 'font-weight: 600; color: #2A2328', r.name));
+      cap.appendChild(document.createTextNode(' · ' + r.service));
+      fig.appendChild(cap);
+      list.appendChild(fig);
+    });
+  }
+  render();
+
+  var bForm = document.getElementById('booking-form'), bDone = document.getElementById('booking-done');
+  bForm.addEventListener('submit', function (e) { e.preventDefault(); bForm.reset(); bForm.hidden = true; bDone.hidden = false; });
+  document.getElementById('booking-new').addEventListener('click', function () { bDone.hidden = true; bForm.hidden = false; });
+
+  var rForm = document.getElementById('review-form'), rDone = document.getElementById('review-done');
+  rForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    reviews.unshift({
+      name: document.getElementById('r-name').value.trim(),
+      rating: document.getElementById('r-rating').value,
+      text: document.getElementById('r-text').value.trim(),
+      service: 'Pacijentkinja', sample: false
+    });
+    render(); rForm.reset(); rForm.hidden = true; rDone.hidden = false;
+  });
+  document.getElementById('review-new').addEventListener('click', function () { rDone.hidden = true; rForm.hidden = false; });
+})();
+</script>
+</body>
+</html>

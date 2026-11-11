@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 520" width="1120" height="520">
+  <rect width="1120" height="520" fill="#F3EEEA"/>
+  <!-- blokovi -->
+  <g fill="#E8E0DA">
+    <rect x="40" y="40" width="220" height="140" rx="10"/>
+    <rect x="300" y="40" width="260" height="140" rx="10"/>
+    <rect x="600" y="40" width="200" height="140" rx="10"/>
+    <rect x="40" y="230" width="220" height="120" rx="10"/>
+    <rect x="300" y="230" width="260" height="120" rx="10"/>
+    <rect x="600" y="230" width="200" height="120" rx="10"/>
+    <rect x="40" y="400" width="220" height="100" rx="10"/>
+    <rect x="600" y="400" width="200" height="100" rx="10"/>
+  </g>
+  <!-- park -->
+  <rect x="300" y="400" width="260" height="100" rx="10" fill="#D5E2D3"/>
+  <circle cx="360" cy="440" r="14" fill="#BFD3BE"/>
+  <circle cx="410" cy="460" r="18" fill="#BFD3BE"/>
+  <circle cx="480" cy="436" r="16" fill="#BFD3BE"/>
+  <!-- reka -->
+  <path d="M860 0 C900 120 840 220 900 320 C950 400 930 460 960 520 L1120 520 L1120 0 Z" fill="#D6E3EA"/>
+  <!-- ulice -->
+  <g fill="#FFFFFF">
+    <rect x="0" y="190" width="850" height="30"/>
+    <rect x="0" y="360" width="850" height="30"/>
+    <rect x="270" y="0" width="20" height="520"/>
+    <rect x="570" y="0" width="20" height="520"/>
+  </g>
+  <!-- glavni bulevar -->
+  <rect x="0" y="196" width="850" height="18" fill="#F7E9D8"/>
+  <!-- pin -->
+  <ellipse cx="445" cy="300" rx="22" ry="7" fill="#2A2328" fill-opacity="0.15"/>
+  <path d="M445 300 C445 300 405 252 405 225 A40 40 0 0 1 485 225 C485 252 445 300 445 300 Z" fill="#6B2D5C"/>
+  <circle cx="445" cy="224" r="15" fill="#FFFFFF"/>
+  <!-- oznaka -->
+  <rect x="495" y="246" width="250" height="56" rx="12" fill="#FFFFFF" stroke="#E2D6DC"/>
+  <text x="515" y="270" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#2A2328">Femina Vita</text>
+  <text x="515" y="291" font-family="Inter, Arial, sans-serif" font-size="15" fill="#5A4F55">Klare Cetkin BB</text>
+</svg>
